@@ -10,7 +10,7 @@ public class Main {
         System.out.println(track.toString2());
         System.out.println(flight.toString2());
         System.out.println(fighter.toString2());
-        car.howManyKilometres();
+        car.howManyKilometres(5);
         track.maxload(5);
         flight.maxqualityOfPassengers(50);
         fighter.pusk(0);

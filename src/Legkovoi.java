@@ -36,16 +36,16 @@ public class Legkovoi extends Nazemnyi{
                 ", qualityOfPassengers=" + qualityOfPassengers +
                 '}' + toString1();
     }
-    double time = 3;
+
     double distance;
     double consumptionTime;
 
 
-     public void howManyKilometres(){
+     public void howManyKilometres(double time){
         distance = time*this.getMaxSpeed();
         consumptionTime = time*this.getConsumption();
 
-        System.out.println("За время " + this.time+ " ч, автомобиль " + this.getName() +
+        System.out.println("За время " + time+ " ч, автомобиль " + this.getName() +
                " двигаясь с максимальной скоростью "+ this.getMaxSpeed()+" км/ч\n" +
                 "проедет " +distance+" км и израсходует "+ consumptionTime +" литров топлива.");
     }
