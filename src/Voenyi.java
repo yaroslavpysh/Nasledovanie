@@ -40,6 +40,10 @@ public class Voenyi extends Vozdyshnyi{
             System.out.println("Ракет больше нет");
         }
 
-
+    }
+    public void ejection (){
+        if(this.availabilityOfCat == true){
+            System.out.println("Катапультирование прошло успешно");
+        } else System.out.println("У вас нет такое системы");
     }
 }
